@@ -1,0 +1,7 @@
+# Project exclude paths
+.idea
+node_modules/
+dist/
+.parcel-cache
+.env
+coverage/
