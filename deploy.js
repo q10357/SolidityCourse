@@ -26,6 +26,11 @@ async function main() {
 
   const contract = await contractFactory.deploy({ gasPrice: 10000000000 });
   const transactionReceipt = await contract.deploymentTransaction().wait(1);
+
+  console.log("Contract interface (ABI) : ");
+  console.log(contract.interface);
+  console.log("Here is the transaction receipt: ");
+  console.log(transactionReceipt);
 }
 
 main()
